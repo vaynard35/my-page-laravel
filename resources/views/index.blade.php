@@ -1,3 +1,7 @@
+@php
+    $scripts_revision=2;
+@endphp
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,8 +19,8 @@
     />
     <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
     
-    <link rel="stylesheet" href="/css/nav-component.css">
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/nav-component.css?{{$scripts_revision}}">
+    <link rel="stylesheet" href="/css/styles.css?{{$scripts_revision}}">
 </head>
 <body>
     <nav >
@@ -150,8 +154,8 @@
         const recaptchaKey="{{env('CAPTCHA_PUBLIC_KEY')}}"
     </script>
     <script src="https://www.google.com/recaptcha/api.js?render={{env('CAPTCHA_PUBLIC_KEY')}}"></script>
-    <script src="./js/fx.js"></script>
-    <script src="/js/NavComponent.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/fx.js?{{$scripts_revision}}"></script>
+    <script src="/js/NavComponent.js?{{$scripts_revision}}"></script>
+    <script src="./js/main.js?{{$scripts_revision}}"></script>
 </body>
 </html>
