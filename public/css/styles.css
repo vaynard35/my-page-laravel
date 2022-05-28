@@ -396,6 +396,11 @@ section h3 {
 
 @media screen and (min-width:660px) {
 
+    nav {
+        height:20vh;
+        
+    }
+
     #home {
         height: 80vh;
     }
