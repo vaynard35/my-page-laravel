@@ -249,6 +249,11 @@ section, nav{
     left: 15%;
 }
 
+
+.arrow{
+    display:none;
+}
+
 #about {
     background-color: var(--section-background);
     padding:20px;
@@ -394,6 +399,8 @@ section h3 {
 
 
 
+
+
 @media screen and (min-width:660px) {
 
     nav {
@@ -414,6 +421,10 @@ section h3 {
         grid-column: span 4;
 
     
+    }
+
+    .arrow{
+        display:block;
     }
 
     #contact form label {
