@@ -65,6 +65,7 @@ input, textarea {
 html {
     font-size: clamp(17px,1.5vw,21px);
     scroll-behavior: smooth;
+    width:100%;
 }
 
 
@@ -340,6 +341,10 @@ section h3 {
 #contact form label > span {
     display:inline-block;
     width:200px;
+}
+
+#contact form textarea {
+    width: 251px;
 }
 
 
