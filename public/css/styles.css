@@ -132,7 +132,7 @@ h4 {
 
 
 nav {
-    height:20vh;
+    height:30vh;
     
 }
 
@@ -168,7 +168,7 @@ nav a:hover{
 
 
 #home {
-    height:80vh;
+    
     align-items: center;
     padding:20px;
     
@@ -390,6 +390,10 @@ section h3 {
 
 
 @media screen and (min-width:660px) {
+
+    #home {
+        height: 80vh;
+    }
 
     .main-img{
         grid-column: span 4;

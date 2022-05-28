@@ -1,5 +1,5 @@
 @php
-    $scripts_revision=2;
+    $scripts_revision=3;
 @endphp
 
 <html lang="en">
@@ -53,7 +53,7 @@
         <h2 class="block-shadow-lg">
             <p>{{__('index.hero_1')}}</p>
             <p>{{__('index.hero_2')}} </p>
-            <p>{{__('index.hero_3')}}</p>
+            
         </h2>
 
         <!-- go down arrow-->

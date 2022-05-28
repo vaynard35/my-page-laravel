@@ -32,11 +32,12 @@
 }
 
 
-@media (max-width:768px){
+@media (max-width:660px){
     
     .nav-component {
         display:flex;
         flex-direction: column;
+        justify-content: normal;
         
     }
 
