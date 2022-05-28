@@ -29,11 +29,14 @@ setTimeout( () => {
 //handle form submission
 
 const form = document.querySelector('form')
+const submitButton = document.querySelector('form button')
 const formUrl = '/submitContactForm'
 
 
 form.addEventListener('submit', e => {
     e.preventDefault()
+    submitButton.disabled = true
+
 
     const data = new FormData(e.target)
 
@@ -43,11 +46,13 @@ form.addEventListener('submit', e => {
             data.append('captcha_token',token)
             fetch(formUrl, {body: data, method: 'POST' } )
             .then(response => {
+                submitButton.disabled = false
 
                 if(!response.ok){
                     document.querySelector('.response_ok').classList.add('hide')
                     document.querySelector('.response_error').classList.remove('hide')
                     document.querySelector('.error_message').innerHTML = ' status: '+ response.status + '. '+ response.statusText
+                    
                     return
                 }
 
@@ -57,6 +62,7 @@ form.addEventListener('submit', e => {
 
             })
             .catch(error => {
+                submitButton.disabled = false
                 document.querySelector('.response_ok').classList.add('hide')
                 document.querySelector('.response_error').classList.remove('hide')
                 document.querySelector('.error_message').innerHTML = error.message

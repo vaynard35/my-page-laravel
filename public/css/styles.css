@@ -136,7 +136,7 @@ nav {
 }
 
 nav li {
-    max-height: 5vh;
+    max-height: 4vh;
 }
 
 nav a {
@@ -153,6 +153,18 @@ nav a:hover{
     
     text-decoration: none; 
 }
+
+.lang img {
+    height: 1em;
+    display:inline-block;
+    margin-left:10px;
+    filter: grayscale(100%);
+}
+
+.lang .active img {
+    filter: grayscale(0%);
+}
+
 
 #home {
     height:80vh;
@@ -345,6 +357,10 @@ section h3 {
 
     background-color: var(--primary);
     color: var(--secondary);
+}
+
+#contact form button:disabled{
+    opacity:0.1;
 }
 
 

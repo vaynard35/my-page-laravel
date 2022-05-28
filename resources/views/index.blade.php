@@ -4,13 +4,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phpdoktor</title>
+    <link rel="alternate" hreflang="pl" href="{{env('APP_URL')}}/pl" />
+    <link rel="alternate" hreflang="en" href="{{env('APP_URL')}}/en" />
+    
     <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    
     <link href="https://fonts.googleapis.com/css?family=Iceland" rel="stylesheet">
     
     <link rel="stylesheet" href="/css/nav-component.css">
@@ -28,6 +30,10 @@
                 <li><a href="#home">{{__('index.nav_home')}}</a></li>
                 <li><a href="#about">{{__('index.nav_about')}}</a></li>
                 <li><a href="#contact">{{__('index.nav_contact')}}</a></li>
+                <li class="lang">
+                    <a href="/pl" class="{{App::currentLocale() == 'pl' ? 'active' : ''}}"><img src="/assets/pl.png"></a>
+                    <a href="/en" class="{{App::currentLocale() == 'en' ? 'active' : ''}}"><img src="/assets/en.png"></a>
+                </li>
             </ul>
         
     </nav>
