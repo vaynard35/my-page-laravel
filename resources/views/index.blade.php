@@ -116,7 +116,7 @@
             </label>
             <label>
                 <span>{{__('index.contact_email')}}</span>
-                <input type="email" name="email" required>
+                <input type="email" name="email" required >
             </label>
             <label>
                 <span>{{__('index.contact_message')}}</span>
@@ -141,7 +141,9 @@
     <script>
         //captions
         const texts = ["{{__('index.computer_caption_1')}}","{{__('index.computer_caption_2')}}", "{{__('index.computer_caption_3')}}", "{{__('index.computer_caption_4')}}" ]
+        const recaptchaKey="{{env('CAPTCHA_PUBLIC_KEY')}}"
     </script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{env('CAPTCHA_PUBLIC_KEY')}}"></script>
     <script src="./js/fx.js"></script>
     <script src="/js/NavComponent.js"></script>
     <script src="./js/main.js"></script>

@@ -3,6 +3,8 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+use Illuminate\Contracts\Validation\Validator;
 
 class StoreContactFormRequest extends FormRequest
 {
@@ -27,8 +29,14 @@ class StoreContactFormRequest extends FormRequest
             'first_name'=>'required',
             'last_name'=>'required',
             'email' => 'email|required',
-            'message' =>'required'
+            'message' =>'required',
+            'captcha_token' => 'required'
             //
         ];
     }
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(response()->json($validator->errors(), 422));
+    }
+
 }
