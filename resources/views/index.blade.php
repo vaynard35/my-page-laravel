@@ -1,5 +1,5 @@
 @php
-    $scripts_revision=3;
+    $scripts_revision=4;
 @endphp
 
 <html lang="{{App::currentLocale()}}">
@@ -153,7 +153,7 @@
         const texts = ["{{__('index.computer_caption_1')}}","{{__('index.computer_caption_2')}}", "{{__('index.computer_caption_3')}}", "{{__('index.computer_caption_4')}}" ]
         const recaptchaKey="{{env('CAPTCHA_PUBLIC_KEY')}}"
     </script>
-    <!-- <script src="https://www.google.com/recaptcha/api.js?render={{env('CAPTCHA_PUBLIC_KEY')}}"></script> -->
+     <script src="https://www.google.com/recaptcha/api.js?render={{env('CAPTCHA_PUBLIC_KEY')}}"></script> 
     <script src="./js/fx.js?{{$scripts_revision}}"></script>
     <script src="/js/NavComponent.js?{{$scripts_revision}}"></script>
     <script src="./js/main.js?{{$scripts_revision}}"></script>
