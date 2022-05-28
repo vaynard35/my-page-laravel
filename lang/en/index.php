@@ -29,7 +29,7 @@ return [
 
 
     'education' =>  'Education',
-    'education_1'=> 'Physics, University of Szczecin,Poland. Year of graduation: 2011.',
+    'education_1'=> 'Physics, University of Szczecin, Poland. Year of graduation: 2011.',
     'education_2'=> 'Electronics and Telecommunications, West Pomeranian University of Technology, Szczecin, Poland. Year of graduation: 2009.',
 
     'contact' =>    'I invite you to contact me',
