@@ -1,5 +1,5 @@
 @php
-    $scripts_revision=6;
+    $scripts_revision=8;
 @endphp
 
 <html lang="{{App::currentLocale()}}">

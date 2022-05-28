@@ -68,7 +68,7 @@ input, textarea {
 /*fonts */
 
 html {
-    font-size: clamp(17px,1.5vw,21px);
+    font-size: clamp(16px,1.5vmin,20px);
     scroll-behavior: smooth;
     width:100%;
 }
