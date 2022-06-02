@@ -79,7 +79,7 @@
             
             <h3>{{__('index.technologies')}}</h3>
             <ul id="skills">
-                <li><img src="/assets/skills/js_mini.png" > <span>JS</span></li>
+                <li><img src="/assets/skills/js_mini.png" > <span>Javascript</span></li>
                 <li><img src="/assets/skills/jquery_mini.png" > <span>jQuery</span></li>
                 <li><img src="/assets/skills/react_mini.png" > <span>React</span></li>
 
